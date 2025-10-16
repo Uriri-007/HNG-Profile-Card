@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+body {
+    height: 100vh;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main#app {
+    width: min(500px, 100%);
+    padding: 10px;
+}
+
+article#profile-card {
+    width: 100%;
+    height: 100%;
+}
+
