@@ -2,7 +2,8 @@
     --bg-color: #d6dce9;
     --white: rgb(255, 255, 255);
     --box-shdw-color: #333333;
-    /* --timer-bg: rgba(66, 66, 66, 0.151); */
+    --fig-cptn-bg: #1c1c1cb6;
+    --link-visited-color: #0024f0;
 }
 
 * {
@@ -28,7 +29,7 @@ article#profile-card {
     display: flex;
     flex-direction: column;
     padding: 20px 16px;
-    gap: 1rem;
+    gap: 1.2rem;
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0.5px 0.5px 1px var(--box-shdw-color);
@@ -37,20 +38,21 @@ article#profile-card {
 
 figure#user-avatar {
     max-width: 300px;
-    height: 300px;
-    border: 1px solid;
     position: relative;
+    align-self: center;
 }
 
 figure#user-avatar>img {
     width: 100%;
+    border-radius: 1rem;
 }
 
 figure#user-avatar>figcaption {
+    border-radius: 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     padding: 8px;
-    background-color: var(--box-shdw-color);
+    background-color: var(--fig-cptn-bg);
     color: var(--bg-color);
     font-size: 0.9rem;
     font-weight: 600;
@@ -68,9 +70,13 @@ p#time-display {
     right: 20px;
 }
 
+nav#social-links {
+  margin-top: 8px;
+}
+
 nav#social-links>ul {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 nav#social-links>ul>li {
@@ -79,15 +85,19 @@ nav#social-links>ul>li {
 
 a.icon-link:link {
     color: inherit;
+    transition: all 0.2s;
+    padding: 2px;
+}
+
+a.icon-link:hover {
+  font-size: calc(1rem - 2px);
+  border: 2px double black;
 }
 
 a.icon-link:visited {
-
+    color: var(--link-visited-color);
 }
 
-a.icon-link:focus {
-
-}
 
 section#user-lifestyle {
     display: flex;
@@ -108,7 +118,7 @@ section#user-lifestyle {
     }   
 
     section#user-details {
-        max-width: 300px;
+        max-width: 270px;
     }
 
     section#user-lifestyle {
