@@ -76,7 +76,8 @@ nav#social-links {
 
 nav#social-links>ul {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
+    width: max(4.5rem, 80px);
 }
 
 nav#social-links>ul>li {
@@ -89,9 +90,11 @@ a.icon-link:link {
     padding: 2px;
 }
 
-a.icon-link:hover {
+a.icon-link:hover, a.icon-link:focus {
   font-size: calc(1rem - 2px);
-  border: 2px double black;
+  border: 3px double var(--bg-color);
+  color: var(--bg-color);
+  background-color: var(--box-shdw-color);
 }
 
 a.icon-link:visited {

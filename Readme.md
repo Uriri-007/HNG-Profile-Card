@@ -15,7 +15,7 @@ This project is the Stage 0 task for the HNG Internship Frontend program, focuse
 ## 🛠️ Tech Stack
  * __HTML5__ | Project structure and semantics.
  * __CSS3__ | Styling and responsive design (Flexbox/Grid).
- * __Vanilla JavaScript__ | Handling dynamic content (e.g., date.getTime()).
+ * __Vanilla JavaScript__ | Handling dynamic content (e.g., Date.now()).
 
 ## 🤝 Contact
 Created by Ogboumah Ohiomokhai
