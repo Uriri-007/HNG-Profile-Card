@@ -1,12 +1,6 @@
-(function Domaccess() {
-  const userImg = document.querySelector("[data-testid='user-profile-picture']")
-  const userName = document.querySelector("[data-testid='user-profile-name']")
-  const userTitle = document.querySelector("[data-testid='user-profile-title']")
+function tickerTimer() {
+  const date = new Date()
+  document.querySelector("#time-display").textContent = date.getTime() || "Loading time..."
+}
 
-  return {
-    userImg,
-    userName,
-    userTitle,
-  };
-})();
-
+document.addEventListener("DOMContentLoaded", () => setInterval(tickerTimer, 100))
