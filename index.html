@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/3fc678801b.js" crossorigin="anonymous"></script>
-    <title>Profile Card</title>
-  </head>
-  <body>
-    <article id="profile-card" data-testid="test-profile-card">
-      <figure>
-        <img src="https://uriri-007.github.io/Uri-Homepage/assets/uri_okhai.webp" id="user-picture" data-testid="test-user-avatar" alt="user profile avatar" />
-        <figcaption>Frontend Web Dev</figcaption>
-      </figure>
-      <h2 id="profile-name" data-testid="test-user-name">Ogboumah Ohiomokhai</h2>
-      <p id="user-title" data-testid="test-user-bio">I am an 18 year old frontend web developer from Nigeria with an undying passion for more knowledge. I also am the founder of whoFyne.</p>
-      <ul id="social-links" data-testid="test-user-social-links">
-        <li data-testid="test-user-social-github"><a href="https://github.com/Uriri-007" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
-        <li data-testid="test-user-social-LinkedIn"><a href="https://www.linkedin.com/in/okhai-ogboumah-605166365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li data-testid="test-user-social-twitter"><a href="https://x.com/IamOkhai?t=HXGli6Z3fuO4aaFeBNfv6w&s=09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
-      </ul>
-      <section id="user-lifestyle">
-        <dl>
-          <h2>Hobbies</h2>
-          <ul data-testid="test-user-hobbies">
-            <li>Basketball</li>
-            <li>Modelling</li>
-            <li>Coding</li>
-          </ul>
-          
-          <h2>Dislikes</h2>
-          <ul data-testid="test-user-dislikes">
-            <li>Football</li>
-            <li>Nigerian movies</li>
-          </ul>
-      </section>
-    </article>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/3fc678801b.js" crossorigin="anonymous"></script>
+  <title>Profile Card</title>
+</head>
+
+<body>
+  <article id="profile-card" data-testid="test-profile-card">
+    <figure id="user-avatar">
+      <img 
+        src="https://uriri-007.github.io/Uri-Homepage/assets/uri_okhai.webp" 
+        data-testid="test-user-avatar" 
+        alt="Ogboumah Ohiomokhai's profile picture"
+        aria-describedby="avatar-caption" 
+      />
+      <figcaption id="avatar-caption">Frontend Web Dev</figcaption> 
+    </figure>
+    
+    <section id="user-details" aria-labelledby="profile-name">
+      <p id="time-display" data-testid="test-user-time" role="timer">
+        Loading Time...
+      </p>
+
+      <h2 id="profile-name" data-testid="test-user-name">Ogboumah Ohiomokhai</h2>
+      <p id="bio" data-testid="test-user-bio">I am an 18 year old frontend web developer from Nigeria with an undying passion for more knowledge. I also am the founder of whoFyne.</p>
+      
+      <nav aria-label="Social Media Links" id="social-links" data-testid="test-user-social-links">
+        <ul>
+          <li data-testid="test-user-social-github">
+            <a href="https://github.com/Uriri-007" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li data-testid="test-user-social-linkedin">
+            <a href="https://www.linkedin.com/in/okhai-ogboumah-605166365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="Linkedin Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li data-testid="test-user-social-twitter">
+            <a href="https://x.com/IamOkhai?t=HXGli6Z3fuO4aaFeBNfv6w&s=09" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) Profile">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    
+    <section id="user-lifestyle">
+      <div aria-labelledby="hobbies-heading">
+        <h2 id="hobbies-heading">Hobbies</h2>
+        <ul data-testid="test-user-hobbies">
+          <li>Basketball</li>
+          <li>Modelling</li>
+          <li>Coding</li>
+        </ul>
+      </div>
+        
+      <div aria-labelledby="dislikes-heading">
+        <h2 id="dislikes-heading">Dislikes</h2>
+        <ul data-testid="test-user-dislikes">
+          <li>Football</li>
+          <li>Nigerian movies</li>
+        </ul>
+      </div>
+    </section>
+  </article>
+  
+  <script src="script.js"></script>
+</body>
+
 </html>
