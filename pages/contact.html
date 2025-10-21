@@ -20,38 +20,43 @@
       <ul>
         <li data-testid="test-profile-link-home"><a href="../index.html" class="header-link"><i class="fa-solid fa-house sm-screens"></i><span class="lg-screens">Home</span></a></li>
         <li data-testid="test-profile-link-about"><a href="./about.html" class="header-link"><i class="fa-solid fa-user sm-screens"></i><span class="lg-screens">About Me</span></a></li>
-        <li data-testid="test-profile-link-contact" class="active"><a href="#" class="header-link"><i class="fa-solid fa-handshake sm-screens"></i><span class="lg-screens">Contact Us</span></a></li>
+        <li data-testid="test-profile-link-contact" class="active"><a href="#" class="header-link" aria-current="page"><i class="fa-solid fa-handshake sm-screens"></i><span class="lg-screens">Contact Us</span></a></li>
       </ul>
     </nav>
   </header>
   
-  <form data-testid="test-contact-form" action="#" method="get">
+  <main data-testid="test-contact-page" id="contact-page">
+  <form data-testid="test-contact-form" action="#" method="post">
     <div class="form-group">
       <label for="full-name">Full Name:</label>
-      <input type="text" name="fullName" id="full-name" data-testid="test-contact-name" aria-describedby="name-error-message" placeholder="John Doe"   />
-      <span class="error-msg" id="name-error-messsage" data-testid="test-contact-error-name">Input your full name i.e first name and last name.</span>
+      <input type="text" name="fullName" id="full-name" data-testid="test-contact-name" aria-describedby="name-error-message" placeholder="John Doe" required/>
+      <span class="error-msg" id="name-error-message" data-testid="test-contact-error-name" aria-live="polite">Input your full name i.e first name and last name.</span>
     </div>
     
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" data-testid="test-contact-email" aria-describedby="email-error-message" placeholder="johndoe@gmail.com"   />
-      <span class="error-msg" id="email-error-messsage" data-testid="test-contact-error-email">Input a valid email i.e xyz@gmail.com.</span>
+      <input type="email" name="email" id="email" data-testid="test-contact-email" aria-describedby="email-error-message" placeholder="johndoe@gmail.com" required/>
+      <span class="error-msg" id="email-error-message" data-testid="test-contact-error-email" aria-live="polite">Input a valid email i.e xyz@gmail.com.</span>
     </div>
     
     <div class="form-group">
       <label for="subject">Subject:</label>
-      <input type="text" name="subject" id="subject" data-testid="test-contact-subject" aria-describedby="subject-error-message" placeholder="Partnership"   />
-      <span class="error-msg" id="subject-error-messsage" data-testid="test-contact-error-subject">You should have a valid subject.</span>
+      <input type="text" name="subject" id="subject" data-testid="test-contact-subject" aria-describedby="subject-error-message" placeholder="Partnership" required/>
+      <span class="error-msg" id="subject-error-message" data-testid="test-contact-error-subject" aria-live="polite">You should have a valid subject.</span>
     </div>
     
     <div class="form-group">
       <label for="message">Message:</label>
-      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response"   >
-      </textarea>
-      <span class="error-msg" id="message-error-response" data-testid="test-contact-error-message">Messages must have a minimum of 10 words.</span>
+      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response" required></textarea>
+      <span class="error-msg" id="message-error-response" data-testid="test-contact-error-message" aria-live="polite">Messages must have a minimum of 10 words.</span>
     </div>
     <button type="submit" data-testid="test-contact-submit">Submit</button>
   </form>
+  <div id="success-pop-up" data-testid="test-contact-success" aria-live="polite" aria-labelledby="pop-up-message">
+    <p class="pop-up-emoji">✅️</p>
+    <p id="pop-up-message">Your message has been sent.</p>
+  </div>
+  </main>
   <script src="validateForm.js"></script>
 </body>
 

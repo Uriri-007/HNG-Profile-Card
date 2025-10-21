@@ -1,9 +1,9 @@
 const nameInput = document.getElementById("full-name");
-const nameErrorSpan = document.getElementById("name-error-messsage");
+const nameErrorSpan = document.getElementById("name-error-message");
 const emailInput = document.getElementById("email");
-const emailErrorSpan = document.getElementById("email-error-messsage");
+const emailErrorSpan = document.getElementById("email-error-message");
 const subjectInput = document.getElementById("subject");
-const subjectErrorSpan = document.getElementById("subject-error-messsage");
+const subjectErrorSpan = document.getElementById("subject-error-message");
 const messageInput = document.getElementById("message");
 const messageErrorSpan = document.getElementById("message-error-response");
 const formElement = document.querySelector("form")
@@ -37,8 +37,8 @@ function isMessageValid(string) {
   return true
 }
 
-function displayErrorUI(elem) {
-  elem.style.display = "block";
+function displayFeedbackUI(elem, isFlex = false) {
+  elem.style.display = `${isFlex ? "flex" : "block"}`;
     setTimeout(() => {
       elem.style.display = "none";
     }, 2000);
@@ -48,18 +48,19 @@ function displayErrorUI(elem) {
 formElement.addEventListener("submit", (event) => {
   event.preventDefault()
   if(!isNameValid(nameInput.value)) {
-    displayErrorUI(nameErrorSpan)
+    displayFeedbackUI(nameErrorSpan)
     return
   } else if(!isEmailValid(emailInput.value)) {
-    displayErrorUI(emailErrorSpan)
+    displayFeedbackUI(emailErrorSpan)
     return
   } else if(!isSubjectValid(subjectInput.value)) {
-    displayErrorUI(subjectErrorSpan)
+    displayFeedbackUI(subjectErrorSpan)
     return
   } else if(!isMessageValid(messageInput.value)) {
-    displayErrorUI(messageErrorSpan)
+    displayFeedbackUI(messageErrorSpan)
     return
   } else {
-
+    displayFeedbackUI(successDiv, true)
   }
+  event.target.reset()
 })
