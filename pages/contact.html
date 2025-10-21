@@ -46,13 +46,13 @@
     
     <div class="form-group">
       <label for="message">Message:</label>
-      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response"  >
+      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response"   >
       </textarea>
       <span class="error-msg" id="message-error-response" data-testid="test-contact-error-message">Messages must have a minimum of 10 words.</span>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" data-testid="test-contact-submit">Submit</button>
   </form>
-  <script src="../script.js"></script>
+  <script src="validateForm.js"></script>
 </body>
 
 </html>
