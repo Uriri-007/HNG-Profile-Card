@@ -28,25 +28,26 @@
   <form data-testid="test-contact-form" action="#" method="get">
     <div class="form-group">
       <label for="full-name">Full Name:</label>
-      <input type="text" name="fullName" id="full-name" data-testid="test-contact-name" aria-describedby="name-error-message" placeholder="John Doe" required />
+      <input type="text" name="fullName" id="full-name" data-testid="test-contact-name" aria-describedby="name-error-message" placeholder="John Doe"   />
       <span class="error-msg" id="name-error-messsage" data-testid="test-contact-error-name">Input your full name i.e first name and last name.</span>
     </div>
     
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" data-testid="test-contact-email" aria-describedby="email-error-message" placeholder="johndoe@gmail.com" required />
+      <input type="email" name="email" id="email" data-testid="test-contact-email" aria-describedby="email-error-message" placeholder="johndoe@gmail.com"   />
       <span class="error-msg" id="email-error-messsage" data-testid="test-contact-error-email">Input a valid email i.e xyz@gmail.com.</span>
     </div>
     
     <div class="form-group">
       <label for="subject">Subject:</label>
-      <input type="text" name="subject" id="subject" data-testid="test-contact-subject" aria-describedby="subject-error-message" placeholder="Partnership" required />
+      <input type="text" name="subject" id="subject" data-testid="test-contact-subject" aria-describedby="subject-error-message" placeholder="Partnership"   />
       <span class="error-msg" id="subject-error-messsage" data-testid="test-contact-error-subject">You should have a valid subject.</span>
     </div>
     
     <div class="form-group">
       <label for="message">Message:</label>
-      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response" required />
+      <textarea name="message" id="message" data-testid="test-contact-message" aria-describedby="message-error-response"  >
+      </textarea>
       <span class="error-msg" id="message-error-response" data-testid="test-contact-error-message">Messages must have a minimum of 10 words.</span>
     </div>
     <button type="submit">Submit</button>
