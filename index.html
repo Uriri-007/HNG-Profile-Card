@@ -7,31 +7,37 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/3fc678801b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Profile Card</title>
 </head>
 
 <body>
+  <header>
+    <h1 data-testid="test-profile-heading">My Profile Card</h1>
+    <nav data-testid="test-profile-navigations" id="navigation-links">
+      <ul>
+        <li data-testid="test-profile-link-home" class="active"><a href="#" class="header-link"><i class="fa-solid fa-house sm-screens"></i><span class="lg-screens">Home</span></a></li>
+        <li data-testid="test-profile-link-about"><a href="./pages/about.html" class="header-link"><i class="fa-solid fa-user sm-screens"></i><span class="lg-screens">About Me</span></a></li>
+        <li data-testid="test-profile-link-contact"><a href="./pages/contact.html" class="header-link"><i class="fa-solid fa-handshake sm-screens"></i><span class="lg-screens">Contact Us</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  
   <article id="profile-card" data-testid="test-profile-card">
     <figure id="user-avatar">
-      <img 
-        src="https://uriri-007.github.io/Uri-Homepage/assets/uri_okhai.webp" 
-        data-testid="test-user-avatar" 
-        alt="Ogboumah Ohiomokhai's profile picture"
-        aria-describedby="avatar-caption" 
-      />
-      <figcaption id="avatar-caption">Frontend Web Dev</figcaption> 
+      <img src="https://uriri-007.github.io/Uri-Homepage/assets/uri_okhai.webp" data-testid="test-user-avatar" alt="Ogboumah Ohiomokhai's profile picture" aria-describedby="avatar-caption" />
+      <figcaption id="avatar-caption">Frontend Web Dev</figcaption>
     </figure>
     
     <section id="user-details" aria-labelledby="profile-name">
       <p id="time-display" data-testid="test-user-time" role="timer">
         Loading Time...
       </p>
-
+      
       <h2 id="profile-name" data-testid="test-user-name">Ogboumah Ohiomokhai</h2>
       <p id="bio" data-testid="test-user-bio">I am an 18 year old frontend web developer from Nigeria with an undying passion for more knowledge. I also am the brains behind <em>whoFyne</em>.</p>
-    
+      
       <nav aria-label="Social Media Links" id="social-links" data-testid="test-user-social-links">
         <ul>
           <li data-testid="test-user-social-github">
@@ -62,7 +68,7 @@
           <li>Coding</li>
         </ul>
       </div>
-        
+      
       <div aria-labelledby="dislikes-heading">
         <h2 id="dislikes-heading">Dislikes</h2>
         <ul data-testid="test-user-dislikes">

@@ -2,11 +2,11 @@
 This project is the Stage 0 task for the HNG Internship Frontend program, focused on building a small, accessible, and testable profile card component using only semantic HTML, modern CSS, and vanilla JavaScript.
 
 ## ✨ Features
- * Semantic HTML: Uses appropriate tags (<article>, <figure>, <h2>, <nav>) for improved structure and accessibility.
- * Highly Testable: Every visible, required element includes the specific data-testid attributes required for automated testing.
- * Responsive Layout: The card layout adjusts cleanly for mobile, tablet, and desktop screens using Flexbox or Grid.
- * Dynamic Time: Displays the current time in milliseconds using pure vanilla JavaScript and updates it regularly.
- * Accessibility (A11y) Focused: Ensures proper focus states, keyboard navigation, and alt text for images.
+ * __Semantic HTML__: Uses appropriate tags (article, figure, h2, nav) for improved structure and accessibility.
+ * __Highly Testable__: Every visible, required element includes the specific data-testid attributes required for automated testing.
+ * __Responsive Layout__: The card layout adjusts cleanly for mobile, tablet, and desktop screens using Flexbox or Grid.
+ * __Dynamic Time__: Displays the current time in milliseconds using pure vanilla JavaScript and updates it regularly.
+ * __Accessibility (A11y) Focused__: Ensures proper focus states, keyboard navigation, and alt text for images.
 
 ## 🔗 Live Demo & Repository
  * [Live Demo](https://uriri-007.github.io/HNG-Profile-Card/)
