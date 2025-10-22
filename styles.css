@@ -174,9 +174,9 @@ section#user-lifestyle {
   padding-left: 16px;
 }
 
-/*Styling for Contact Page*/
+/*Styling for Contact Page and About Page*/
 
-main#contact-page {
+main#contact-page, main#about-page {
   width: min(100%, 800px);
   border-radius: 8px;
   box-shadow: 0.5px 0.5px 1px var(--box-shdw-color);
@@ -297,20 +297,33 @@ p#pop-up-message {
   font-size: 1.125rem;
 }
 
+main#about-page {
+  background-color: var(--white);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+section#my-goals>ul, section#low-confidence-areas>ul {
+  padding-left: 16px;
+}
+
+section#future-note>p {
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+  padding: 0 8px;
+}
+
 @media screen and (min-width: 520px) {
   i.sm-screens {
     display: none;
   }
 
   span.lg-screens {
-    display: block;
+    display: inline;
   }
-
-  a.header-link:focus,
-a.header-link:hover {
-  border-bottom: 3px solid var(--box-shdw-color);
-  background-color: transparent;
-}
 
   article#profile-card {
     flex-direction: row;

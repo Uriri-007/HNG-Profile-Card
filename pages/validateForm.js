@@ -11,7 +11,7 @@ const successDiv = document.getElementById("success-pop-up")
 
 
 function isNameValid(string) {
-  const regex = /[!@#%^&*)(-+=_\d]/;
+  const regex = /[!@#%^&*)(+=_]/;
   if (regex.test(string) || string.trim() === "") {
     return false
   }
@@ -31,7 +31,7 @@ function isSubjectValid(string) {
   return true
 }
 function isMessageValid(string) {
-  if(string.split(" ").length < 10) {
+  if(string.trim().split(" ").length < 10) {
     return false
   }
   return true

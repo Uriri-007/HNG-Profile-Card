@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
   <title>About Me</title>
 </head>
 
@@ -18,14 +17,74 @@
     <h1 data-testid="test-profile-heading">My Profile Card</h1>
     <nav data-testid="test-profile-navigations" id="navigation-links">
       <ul>
-        <li data-testid="test-profile-link-home"><a href="../index.html" class="header-link"><i class="fa-solid fa-house sm-screens"></i><span class="lg-screens">Home</span></a></li>
-        <li data-testid="test-profile-link-about" class="active"><a href="#" class="header-link" aria-current="page"><i class="fa-solid fa-user sm-screens"></i><span class="lg-screens">About Me</span></a></li>
-        <li data-testid="test-profile-link-contact"><a href="./contact.html" class="header-link"><i class="fa-solid fa-handshake sm-screens"></i><span class="lg-screens">Contact Us</span></a></li>
+        <li data-testid="test-profile-link-home">
+          <a href="../index.html" class="header-link">
+            <i class="fa-solid fa-house sm-screens"></i>
+            <span class="lg-screens">Home</span>
+          </a>
+        </li>
+        <li data-testid="test-profile-link-about" class="active">
+          <a href="#" class="header-link" aria-current="page">
+            <i class="fa-solid fa-user sm-screens"></i>
+            <span class="lg-screens">About Me</span>
+          </a>
+        </li>
+        <li data-testid="test-profile-link-contact">
+          <a href="./contact.html" class="header-link">
+            <i class="fa-solid fa-handshake sm-screens"></i>
+            <span class="lg-screens">Contact Us</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
   
-  <script src="../script.js.js"></script>
+  <main data-testid="test-about-page" id="about-page">
+    <section id="about-me" data-testid="test-about-bio">
+      <h2>About Me (My Bio)</h2>
+      <p>I am Ogboumah Ohiomokhai Oghegne, I am a student of Mechanical engineering at UNIBEN. I started coding by learning from <em>freeCodeCamp</em> before I joined <em>WiredSky Technologies</em>. I am a frontend developer with a touch of intelligence. I don't just code–I innovate.</p>
+      <p>My technical foundation rests on HTML5, modern CSS techniques for a clean design and a responsive layout and JavaScript for an interactive website.</p>
+      <p>I am the kind of developer that builds with a focus on problem solving of adhering to best practices while seeking innovative solutions.</p>
+    </section>
+    
+    <section id="my-goals" data-testid="test-about-goals">
+      <h2>My Goals in This Program</h2>
+      <ul id="goals-list" data-testid="test-about-goals-list">
+        <li>Learn new skils.</li>
+        <li>Improve my old skills.</li>
+        <li>Meet like minds in different tracks e.g backend devs.</li>
+        <li>Scale this program through till the end.</li>
+      </ul>
+    </section>
+    
+    <section id="low-confidence-areas" data-testid="test-about-confidence">
+      <h2>Areas of Low Confidence</h2>
+      <ul id="lacking-list" data-testid="test-about-confidence-list">
+        <li>Frontend libraries e.g React.</li>
+        <li>Frontend frameworks e.g Angular.</li>
+      </ul>
+    </section>
+    
+    <section id="future-note" data-testid="test-about-future-note">
+      <h2>A Note to my Future Self</h2>
+      <p>
+        Dear Future Me, I hope you remember the feeling of starting this program, where every requirement—especially nailing the accessibility attributes and data-testids felt like a critical puzzle piece. Never let the convenience of a library or framework make you forget the fundamentals of the DOM and pure JavaScript logic. Remember the satisfaction of solving a complex bug with just vanilla code.
+      </p>
+      <p>
+        <strong>My Promise</strong>: Always prioritize user experience (UX) and accessibility (A11Y) over quick styling. Never deploy a form without robust client-side validation, and always check your layout on a tiny mobile screen before a huge desktop monitor. These core habits are what make us a true frontend wizard.
+      </p>
+      <p>
+        <em>P.S.</em> Have you started working with TypeScript? I hope you’re mentoring the next intern through their own Stage 1 validation struggles. Keep learning, stay humble, and remember the excitement of this first step.
+      </p>
+    </section>
+    
+    <section id="extra-thoughts" data-testid="test-about-extra">
+      <h2>Extra Thoughts on the Process</h2>
+      <p>
+        Reflecting on the completion of the previous task and even while coding this very stage task, I find the deliberate focus on <strong>Accessibility (A11Y)</strong> and <strong>Testability</strong> to be the most impactful takeaways. While building the responsive layout and the form logic was rewarding, consistently implementing the `aria-` attributes and required `data-testid` elements instilled a deeper sense of professional responsibility. It highlighted that building good software is as much about the unseen quality and compliance as it is about the visual outcome. I am looking forward to integrating these habits into more complex future projects.
+      </p>
+    </section>
+  </main>
 </body>
 
 </html>
