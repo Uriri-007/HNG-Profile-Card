@@ -4,7 +4,7 @@ This repository contains the solution for the Frontend Wizards Stage 1 challenge
 
 ## 🌐 Live Demo
 
-**View the application live here:** [**https://uriri-007.github.io/HNG-Profile-Card/**]
+**View the application live [👉here👈](https://uriri-007.github.io/HNG-Profile-Card/)**
 
 ---
 
@@ -32,7 +32,7 @@ To run this project on your machine, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Uriri-007/HNG-Profile-Card.git](https://github.com/Uriri-007/HNG-Profile-Card.git) 
+    git clone https://github.com/Uriri-007/HNG-Profile-Card.git
     ```
 
 2.  **Navigate to the project directory:**
